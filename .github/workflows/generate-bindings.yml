@@ -26,9 +26,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y clang llvm-dev
 
-      - name: Install bindgen
-        run: cargo install bindgen
-
       - name: Generate Bindings
         run: |
           mkdir -p src/bindings
